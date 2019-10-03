@@ -36,10 +36,10 @@ pip install PySide2
 
 ## Layouts
 
-- QHBoxLayout(#) Layout posiciona os widgets horizontalmente (linha).
-- QVBoxLayout(#) Layout posiciona os widgets verticalmente (coluna).
-- QGridLayout(#) Layout posiciona os widgets em celulas (linhas e colunas).
-- QFormLayout(#) Layout posiciona os widgets como em um formulario (varias linhas 2 colunas).
+- [QHBoxLayout](./src/layouts/qhboxlayout.py) Layout posiciona os widgets horizontalmente (linha).
+- [QVBoxLayout](./src/layouts/qvboxlayout.py) Layout posiciona os widgets verticalmente (coluna).
+- [QGridLayout](./src/layouts/qgridlayout.py) Layout posiciona os widgets em celulas (linhas e colunas).
+- [QFormLayout](./src/layouts/qformlayout.py) Layout posiciona os widgets como em um formulario (varias linhas 2 colunas).
 
 ## Banco de dados
 
