@@ -2,20 +2,25 @@
 """."""
 from PySide2 import QtCore
 from PySide2.QtUiTools import QUiLoader
-from PySide2.QtWidgets import (QApplication, QLabel, QLineEdit, QPushButton, QAction)
+from PySide2.QtWidgets import (QApplication, QLabel, QLineEdit, QPushButton, QAction, QMainWindow)
 
 
-class MainWindow:
-    def __init__(self, ui_file):
-        self.label = ui_file.findChild(QLabel, 'label')
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        window = QUiLoader().load('./forms/MainWindow.ui', self)
 
-        self.line_edit = ui_file.findChild(QLineEdit, 'lineEdit')
+        self.label = self.findChild(QLabel, 'label')
 
-        push_button = ui_file.findChild(QPushButton, 'pushButton')
+        self.line_edit = self.findChild(QLineEdit, 'lineEdit')
+
+        push_button = self.findChild(QPushButton, 'pushButton')
         push_button.clicked.connect(self.change_label)
 
-        action_sair = ui_file.findChild(QAction, 'actionSair')
+        action_sair = self.findChild(QAction, 'actionSair')
         action_sair.triggered.connect(self.exit_app)
+
+        window.show()
 
     def exit_app(self):
         QApplication.quit()
@@ -34,9 +39,5 @@ if __name__ == "__main__":
     QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_ShareOpenGLContexts)
 
     app = QApplication([])
-
-    ui_file = QUiLoader().load('./forms/MainWindow.ui')
-    mainwindow = MainWindow(ui_file=ui_file)
-    ui_file.show()
-
+    mainwindow = MainWindow()
     sys.exit(app.exec_())

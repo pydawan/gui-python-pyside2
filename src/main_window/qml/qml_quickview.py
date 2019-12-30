@@ -5,13 +5,25 @@ from PySide2.QtGui import QGuiApplication, QIcon
 from PySide2.QtQuick import QQuickView
 
 
-class MainWindow:
-    def __init__(self, win):
+class MainWindow(QQuickView):
+    def __init__(self):
+        super().__init__()
+        self.setTitle('Python PySide2 e QQuickView()')
+        self.resize(800, 600)
+        self.setMinimumSize(QSize(400, 300))
+        self.setResizeMode(QQuickView.SizeRootObjectToView)
+        self.setSource(QUrl.fromLocalFile('./ui/interface_qquickview.qml'))
 
-        self.labe1 = win.findChild(QObject, 'label')
-        self.text_field = win.findChild(QObject, 'textfield')
-        self.button = win.findChild(QObject, 'button')
+        if self.status() == QQuickView.Error:
+            sys.exit(-1)
+
+        self.labe1 = self.findChild(QObject, 'label')
+        self.text_field = self.findChild(QObject, 'textfield')
+        self.button = self.findChild(QObject, 'button')
         self.button.clicked.connect(self.change_label)
+
+        self.show()
+        # del self
 
     def change_label(self):
         if self.text_field.property('text'):
@@ -26,16 +38,6 @@ if __name__ == '__main__':
     app = QGuiApplication(sys.argv)
     app.setWindowIcon(QIcon('../../_icons/icon.png'))
 
-    view = QQuickView()
-    view.setTitle('Python PySide2 e QQuickView()')
-    view.resize(800, 600)
-    view.setMinimumSize(QSize(400, 300))
-    view.setResizeMode(QQuickView.SizeRootObjectToView)
-    view.setSource(QUrl.fromLocalFile('./ui/interface_qquickview.qml'))
+    mainwindow = MainWindow()
 
-    if view.status() == QQuickView.Error:
-        sys.exit(-1)
-
-    ui = MainWindow(win=view)
-    view.show()
-    sys.exit(app.exec_())
+    app.exec_()

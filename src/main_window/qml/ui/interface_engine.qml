@@ -49,5 +49,15 @@ Window {
             text: qsTr("Clique Aqui")
             Layout.fillWidth: true
         }
+        Button {
+            id: button_python_slot
+            objectName: "button_python_slot"
+            text: qsTr("Método Python é chamado no QML")
+            Layout.fillWidth: true
+            onClicked: {
+                print('Botão clicado (QML)', textfield.text )
+                MainWindow._on_button_clicked(textfield.text)
+            }
+        }
     }
 }

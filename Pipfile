@@ -11,4 +11,4 @@ autopep8 = "*"
 pyside2 = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
