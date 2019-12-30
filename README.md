@@ -41,6 +41,12 @@ pip install PySide2
 - [QGridLayout](./src/layouts/qgridlayout.py) Layout posiciona os widgets em celulas (linhas e colunas).
 - [QFormLayout](./src/layouts/qformlayout.py) Layout posiciona os widgets como em um formulario (varias linhas 2 colunas).
 
+## Kirigami
+
+sudo apt install qml-module-org-kde-kirigami2
+
+Atualmente está com o bug **module "org.kde.kirigami" is not installed**: https://www.mail-archive.com/debian-qt-kde@lists.debian.org/msg89572.html
+
 ## Banco de dados
 
 Exemplos de CRUD sem utilizar model:
