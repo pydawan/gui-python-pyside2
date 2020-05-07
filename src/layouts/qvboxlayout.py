@@ -13,7 +13,7 @@ class MainWindow(QWidget):
 
         # Ícone da janela principal
         icon = QIcon()
-        icon.addPixmap(QPixmap('../_icons/icon.png'))
+        icon.addPixmap(QPixmap('../assets/icons/icon.png'))
         self.setWindowIcon(icon)
 
         # Tamanho inicial da janela.

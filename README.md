@@ -14,25 +14,25 @@ pip install PySide2
 
 ## MainWindow
 
-- [Código minimo para criar janela com QWidget](./src/main_window/minimal-qwidget.py).
-- [Configurando janela do tipo QWidget](./src/main_window/main_window_qwidget.py).
-- [Código minimo para criar janela com QMainWindow](./src/main_window/minimal-qmainwindow.py).
-- [Configurando janela do tipo QMainWindow](./src/main_window/main_window_qmainwindow.py).
+- [Código minimo para criar janela com QWidget](src/mainwindow/minimal-qwidget.py).
+- [Configurando janela do tipo QWidget](src/mainwindow/mainwindow_qwidget.py).
+- [Código minimo para criar janela com QMainWindow](src/mainwindow/minimal-qmainwindow.py).
+- [Configurando janela do tipo QMainWindow](src/mainwindow/mainwindow_qmainwindow.py).
 
 ---
 
-- [Barra de menus](./src/menu_bar/menu_bar.py)
-- [Barra de status](./src/status_bar/status_bar.py)
-- [Barra de ferramentas](./src/tool_bar/tool_bar.py)
+- [Barra de menus](src/menus/menu_bar/menu_bar.py)
+- [Barra de status](src/menus/status_bar/status_bar.py)
+- [Barra de ferramentas](src/menus/tool_bar/tool_bar.py)
 
 ## Abrindo arquivos QML
 
-- [lendo arquivos qml engine](./src/main_window/qml/qml_engine.py).
-- [lendo arquivos qml quickview](./src/main_window/qml/qml_quickview.py).
+- [lendo arquivos qml engine](src/mainwindow/qml/qml_engine.py).
+- [lendo arquivos qml quickview](src/mainwindow/qml/qml_quickview.py).
 
 ## Abrindo arquivos XML
 
-- [lendo arquivos XML](./src/main_window/xml/MainWindow.py)
+- [lendo arquivos XML](src/mainwindow/xml/MainWindow.py)
 
 ## Layouts
 

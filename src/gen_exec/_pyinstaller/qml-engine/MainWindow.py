@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""."""
+"""Gerando executável com PyInstaller."""
 from PySide2.QtCore import QObject
 from PySide2.QtGui import QGuiApplication, QIcon
 from PySide2.QtQml import QQmlApplicationEngine
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     import sys
 
     app = QGuiApplication(sys.argv)
-    app.setWindowIcon(QIcon('icons/icon.png'))
+    app.setWindowIcon(QIcon('./icons/icon.png'))
     engine = QQmlApplicationEngine()
     engine.load('./ui/MainWindow.qml')
     if not engine.rootObjects():

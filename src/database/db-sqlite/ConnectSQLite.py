@@ -88,13 +88,13 @@ class ConnectSQLite:
 if __name__ == '__main__':
     print('Drivers disponíveis:', QSqlDatabase.drivers())
 
-    user = ('Felipe', 35, 'Masculino')
-    users = [
-        ('Maria', 20, 'Feminino'),
-        ('João', 50, 'Masculino'),
-    ]
+    # user = ('Felipe', 35, 'Masculino')
+    # users = [
+    #     ('Maria', 20, 'Feminino'),
+    #     ('João', 50, 'Masculino'),
+    # ]
 
-    database = ConnectSQLite()
+    # database = ConnectSQLite()
 
     # Inserindo os dados.
     # database.insert_row(data=user)
@@ -121,4 +121,4 @@ if __name__ == '__main__':
     # print(database.find())
 
     # Fechando conexão com o banco.
-    database.db.close()
+    # database.db.close()
