@@ -25,8 +25,7 @@ sudo apt install qttools5-dev
 ### Fedora
 
 ```bash
-sudo dnf install qt5-qttools \
-    qt5-designer
+sudo dnf install qt5-qttools qt5-designer
 ```
 
 ### Windows
