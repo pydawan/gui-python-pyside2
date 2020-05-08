@@ -17,7 +17,7 @@ pip install PySide2
 - [Código minimo para criar janela com QWidget](src/mainwindow/minimal-qwidget.py).
 - [Configurando janela do tipo QWidget](src/mainwindow/mainwindow_qwidget.py).
 - [Código minimo para criar janela com QMainWindow](src/mainwindow/minimal-qmainwindow.py).
-- [Configurando janela do tipo QMainWindow](src/mainwindow/mainwindow_qmainwindow.py).
+- [Configurando janela do tipo QMainWindow](src/mainwindow/MainWindow.py).
 
 ---
 
@@ -27,12 +27,12 @@ pip install PySide2
 
 ## Abrindo arquivos QML
 
-- [lendo arquivos qml engine](src/mainwindow/qml/qml_engine.py).
-- [lendo arquivos qml quickview](src/mainwindow/qml/qml_quickview.py).
+- [lendo arquivos qml engine](src/mainwindow/qml-qquickview/qml_engine.py).
+- [lendo arquivos qml quickview](src/mainwindow/qml-qquickview/MainWindow.py).
 
 ## Abrindo arquivos XML
 
-- [lendo arquivos XML](src/mainwindow/xml/MainWindow.py)
+- [lendo arquivos XML](src/mainwindow/xml-qmainwindow/MainWindow.py)
 
 ## Layouts
 
@@ -53,3 +53,14 @@ Exemplos de CRUD sem utilizar model:
 
 - [SQLite3](./src/database/db-sqlite/ConnectSQLite.py)
 - [PostgreSQL](./src/database/db-postgres/ConnectPostgreSQL.py)
+
+Pegar a resolução da tela:
+
+```python
+import sys
+
+app = QApplication(sys.argv)
+screen_size = app.primaryScreen().geometry()
+screen_size = app.desktop().geometry()
+```
+

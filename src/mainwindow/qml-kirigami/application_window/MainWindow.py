@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-sudo apt install qml-module-org-kde-kirigami2
+sudo apt install qml-qquickview-module-org-kde-kirigami2
 org.kde.kirigami
 """
 from PySide2.QtCore import QObject, Slot
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     app.setWindowIcon(QIcon('../../icons/icon.png'))
 
     engine = QQmlApplicationEngine()
-    engine.load('./ui/MainWindow.qml')
+    engine.load('./ui/MainWindow.qml-qquickview')
 
     if not engine.rootObjects():
         sys.exit(-1)

@@ -26,7 +26,7 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     app.setWindowIcon(QIcon('./icons/icon.png'))
     engine = QQmlApplicationEngine()
-    engine.load('./ui/MainWindow.qml')
+    engine.load('./ui/MainWindow.qml-qquickview')
     if not engine.rootObjects():
         sys.exit(-1)
     win = engine.rootObjects()[0]

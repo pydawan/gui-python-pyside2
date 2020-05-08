@@ -30,6 +30,8 @@ sudo dnf install qt5-qttools qt5-designer
 
 ### Windows
 
+https://build-system.fman.io/qt-designer-download
+
 ```bash
 python -m pip install pyqt5-tools
 ```
