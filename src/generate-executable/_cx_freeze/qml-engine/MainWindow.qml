@@ -6,16 +6,15 @@ import QtQuick.Layouts 1.11
 Window {
     id: janela
     visible: true
-    width: 640
-    height: 480
-    title: qsTr("Python PySide2 e QQmlApplicationEngine()")
+    width: Screen.desktopAvailableWidth / 2
+    height: Screen.desktopAvailableHeight / 2
+    minimumWidth: Screen.desktopAvailableWidth / 3
+    minimumHeight: Screen.desktopAvailableHeight / 3
+    title: qsTr("PySide2 QQmlApplicationEngine e connect")
 
     ColumnLayout {
-        anchors.rightMargin: 5
-        anchors.leftMargin: 5
-        anchors.bottomMargin: 5
-        anchors.topMargin: 5
-        spacing: 10
+        anchors.margins: 12
+        spacing: 12
         anchors.fill: parent
 
         Label {
@@ -34,8 +33,8 @@ Window {
         }
 
         TextField {
-            id: textfield
-            objectName: "textfield"
+            id: text_field
+            objectName: "text_field"
             text: qsTr("")
             placeholderText: qsTr("Digite algo")
             Layout.fillHeight: false

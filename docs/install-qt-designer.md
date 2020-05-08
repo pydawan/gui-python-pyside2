@@ -30,22 +30,8 @@ sudo dnf install qt5-qttools qt5-designer
 
 ### Windows
 
-https://build-system.fman.io/qt-designer-download
+Acesse o site [fman build system](https://build-system.fman.io/qt-designer-download) (https://build-system.fman.io/qt-designer-download) e realize o download do instalador.
 
-```bash
-python -m pip install pyqt5-tools
-```
+### macOS
 
-No Windows o **executável** do Qt Designer pode ser localizado nos diretórios:
-
-```bat
-Lib\site-packages\pyqt5_tools\designer.exe
-```
-
-ou
-
-```bat
-Scripts\designer.exe
-```
-
-> O caminho completo até o executável irá depender do local onde foi realizada a instalação do Python ou o local onde o ambiente virtual foi criado!
+Acesse o site [fman build system](https://build-system.fman.io/qt-designer-download) (https://build-system.fman.io/qt-designer-download) e realize o download do instalador.

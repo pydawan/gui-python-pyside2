@@ -1,3 +1,4 @@
+.bak
 # Pycharm
 .idea/
 
@@ -7,6 +8,10 @@
 
 # KDE
 .directory
+
+# Glade temporary files
+*.glade~
+*.ui~
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

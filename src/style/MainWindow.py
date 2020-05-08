@@ -4,9 +4,11 @@
 Criando uma aplicativo do tipo QMainWindow com Python e utilizando o
 `connect()` para executar um callback.
 """
+
 from PySide2.QtCore import Qt
 from PySide2.QtGui import QIcon, QPixmap
-from PySide2.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QLineEdit, QPushButton, QWidget
+from PySide2.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QLabel,
+                               QLineEdit, QPushButton, QWidget, QStyleFactory)
 
 
 class MainWindow(QMainWindow):
@@ -51,18 +53,12 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     import sys
 
-    # Aplicando estilo.
-    # Fedora:
-    # sys.argv += ['--style', 'Fusion']
-    # sys.argv += ['--style', 'Windows']
+    styles = QStyleFactory.keys()
+    print('Estilos disponíveis:', styles)
 
-    # sys.argv += ['--style', 'Default']
+    # Aplicando o estilo:
+    sys.argv += ['--style', 'Fusion']
 
-    # sys.argv += ['--style', 'Imagine']
-    # sys.argv += ['--style', 'Material']
-    # sys.argv += ['--style', 'Universal']
-
-    # sys.argv += ['--style', 'org.kde.desktop']
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
     mainwindow.show()

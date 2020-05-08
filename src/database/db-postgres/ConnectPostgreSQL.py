@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Exemplo de CRUD com PostgreSQL."""
-
 from PySide2.QtSql import QSqlDatabase, QSqlQuery
 
 

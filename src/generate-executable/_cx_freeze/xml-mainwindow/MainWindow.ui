@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>683</width>
+    <height>384</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Python PySide2 MainWindow (XML)</string>
+   <string>Cx_Freeze e XML QMainWindow</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -30,14 +30,14 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="line_edit">
       <property name="placeholderText">
        <string>Digite algo</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="push_button">
       <property name="text">
        <string>Clique Aqui</string>
       </property>
@@ -50,17 +50,10 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>30</height>
+     <width>683</width>
+     <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuMenu">
-    <property name="title">
-     <string>Me&amp;nu</string>
-    </property>
-    <addaction name="actionSair"/>
-   </widget>
-   <addaction name="menuMenu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSair">

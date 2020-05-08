@@ -4,12 +4,9 @@
 Acessando um arquivo de interface QML (`QtQuick.Window`) e utilizando o
 `connect()` para executar um callback.
 """
-from os import environ
-
 from PySide2.QtCore import QObject
 from PySide2.QtGui import QGuiApplication, QIcon
 from PySide2.QtQml import QQmlApplicationEngine
-from PySide2.QtWidgets import QStyleFactory
 
 
 class MainWindow(QObject):
@@ -43,33 +40,6 @@ class MainWindow(QObject):
 
 if __name__ == "__main__":
     import sys
-
-    styles = QStyleFactory.keys()
-    print('Estilos disponíveis:', styles)
-
-    # Aplicando estilo.
-    # Testado no Windows e funcionou.
-    # sys.argv += ['--style', 'Default']
-    # sys.argv += ['--style', 'Fusion']
-    # sys.argv += ['--style', 'Imagine']
-    # sys.argv += ['--style', 'Material']
-    # sys.argv += ['--style', 'Universal']
-    # sys.argv += ['--style', 'Windows']
-    # sys.argv += ['--style', 'org.kde.desktop']
-
-    # ou
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'Default'
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'Fusion'
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'Imagine'
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'Material'
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'Universal'
-    # environ['QT_QUICK_CONTROLS_STYLE'] = 'org.kde.desktop'
-
-    # Para funcionar o estilo `Universal` tem que ser aplicado.
-    # environ['QT_QUICK_CONTROLS_UNIVERSAL_THEME'] = 'Dark'
-    environ['QT_QUICK_CONTROLS_UNIVERSAL_ACCENT'] = 'Violet'
-    environ['QT_QUICK_CONTROLS_UNIVERSAL_FOREGROUND'] = 'Brown'
-    # environ['QT_QUICK_CONTROLS_UNIVERSAL_BACKGROUND'] = 'Steel'
 
     app = QGuiApplication(sys.argv)
     app.setWindowIcon(QIcon('../../assets/icons/icon.png'))
