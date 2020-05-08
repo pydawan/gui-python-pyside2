@@ -51,6 +51,18 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     import sys
 
+    # Aplicando estilo.
+    # Fedora:
+    # sys.argv += ['--style', 'Fusion']
+    # sys.argv += ['--style', 'Windows']
+
+    # sys.argv += ['--style', 'Default']
+
+    # sys.argv += ['--style', 'Imagine']
+    # sys.argv += ['--style', 'Material']
+    # sys.argv += ['--style', 'Universal']
+
+    # sys.argv += ['--style', 'org.kde.desktop']
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
     mainwindow.show()

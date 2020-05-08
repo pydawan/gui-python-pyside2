@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Lendo arquivo de inteface QWiget</string>
+   <string>Lendo arquivo de interface XML QWidget</string>
   </property>
   <property name="windowIcon">
    <iconset>

@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
-"""QWidget.
+"""XML QWidget e Slot.
 
-Lendo arquivo de interface do tipo QWidget e utilizando o connect()
-para executar um callback.
+Lendo arquivo de interface XML QWidget e utilizando o
+`Slot()` para executar um callback.
 
-Ainda não funciona!
+> Ainda não funciona!
 """
 from PySide2.QtCore import QObject, QCoreApplication, Qt, Slot
 from PySide2.QtUiTools import QUiLoader
-from PySide2.QtWidgets import (QApplication, QLabel, QLineEdit)
+from PySide2.QtWidgets import QApplication
 
 
 class MainWindow(QObject):
     def __init__(self):
         super().__init__()
         self.window = QUiLoader().load('./MainWindow.xml')
-        self.label = self.window.findChild(QLabel, 'label')
-        self.line_edit = self.window.findChild(QLineEdit, 'line_edit')
+
+        self.label = self.window.findChild(QObject, 'label')
+        self.line_edit = self.window.findChild(QObject, 'line_edit')
 
         self.window.show()
 

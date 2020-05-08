@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
+"""Kirigami2.
+
+> Ainda não funciona!
 """
-sudo apt install qml-qquickview-module-org-kde-kirigami2
-org.kde.kirigami
-"""
-from PySide2.QtCore import Slot, QObject
+from PySide2.QtCore import QObject, Slot
 from PySide2.QtGui import QGuiApplication, QIcon
 from PySide2.QtQml import QQmlApplicationEngine
 
@@ -34,14 +34,6 @@ class MainWindow(QObject):
 
 if __name__ == "__main__":
     import sys
-
-    # os.environ['QT_QUICK_CONTROLS_STYLE'] = 'Material'
-
-    # sys.argv += ['--style', 'Default']
-    # sys.argv += ['--style', 'Fusion']
-    # sys.argv += ['--style', 'Imagine']
-    # sys.argv += ['--style', 'Material']
-    # sys.argv += ['--style', 'Universal']
 
     app = QGuiApplication(sys.argv)
     app.setWindowIcon(QIcon('../../icons/icon.png'))

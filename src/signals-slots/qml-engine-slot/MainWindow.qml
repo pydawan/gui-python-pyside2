@@ -6,9 +6,11 @@ import QtQuick.Layouts 1.11
 Window {
     id: window
     visible: true
-    width: 683
-    height: 384
-    title: qsTr("PySide2 utilizando o slot()")
+    width: Screen.desktopAvailableWidth / 2
+    height: Screen.desktopAvailableHeight / 2
+    minimumWidth: Screen.desktopAvailableWidth / 3
+    minimumHeight: Screen.desktopAvailableHeight / 3
+    title: qsTr("PySide2 QQmlApplicationEngine e slot")
 
     ColumnLayout {
         anchors.margins: 12

@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Lendo arquivo de inteface QMainWindow</string>
+   <string>Lendo arquivo de interface XML QMainWindow</string>
   </property>
   <property name="windowIcon">
    <iconset>

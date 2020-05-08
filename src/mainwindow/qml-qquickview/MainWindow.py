@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""QQuickView.
+"""QML QQuickView.
 
  Essa é uma classe que cria automaticamente uma janela para arquivos
- qml que não possuam uma janela `QtQuick.Window`.
+ QML que não possuam uma janela `QtQuick.Window`.
  """
 from PySide2.QtCore import QUrl, QSize
 from PySide2.QtGui import QGuiApplication, QIcon
@@ -17,7 +17,7 @@ class MainWindow(QQuickView):
         width = screen_size.width()
         height = screen_size.height()
 
-        self.setTitle('Lendo arquivo QML com QQuickView()')
+        self.setTitle('PySide2 lendo arquivo QML com QQuickView()')
         self.resize(int(width / 2), int(height / 2))
         self.setMinimumSize(QSize(int(width / 3), int(height / 3)))
         self.setResizeMode(QQuickView.SizeRootObjectToView)
@@ -32,8 +32,6 @@ if __name__ == '__main__':
 
     app = QGuiApplication(sys.argv)
     app.setWindowIcon(QIcon('../../assets/icons/icon.png'))
-
     mainwindow = MainWindow()
     mainwindow.show()
-
     app.exec_()

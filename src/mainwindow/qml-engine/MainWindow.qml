@@ -8,5 +8,7 @@ Window {
     visible: true
     width: Screen.desktopAvailableWidth / 2
     height: Screen.desktopAvailableHeight / 2
-    title: qsTr("Lendo arquivo QML com QQmlApplicationEngine()")
+    minimumWidth: Screen.desktopAvailableWidth / 3
+    minimumHeight: Screen.desktopAvailableHeight / 3
+    title: qsTr("PySide2 lendo arquivo QML com QQmlApplicationEngine()")
 }

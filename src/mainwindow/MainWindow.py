@@ -8,7 +8,7 @@ from PySide2.QtWidgets import QApplication, QMainWindow
 
 
 class MainWindow(QMainWindow):
-    """Classe MainWindow herda de QMainWindow().
+    """Classe MainWindow herda de `QMainWindow()`.
 
     `QMainWindow()` possui:
 
@@ -19,22 +19,16 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
+        # Resolução do monitor.
         screen_size = app.primaryScreen().geometry()
-        # screen_size = app.desktop().geometry()
-
         width = screen_size.width()
         height = screen_size.height()
-
         # Tamanho inicial da janela.
         self.resize(int(width / 2), int(height / 2))
         # Tamanho mínimo da janela.
-        self.setMinimumSize(int(width / 2), int(height / 2))
-        # Tamanho maximo da janela.
-        self.setMaximumSize(width - 200, height - 200)
-
+        self.setMinimumSize(int(width / 3), int(height / 3))
         # Título da janela.
-        self.setWindowTitle('Título da janela')
-
+        self.setWindowTitle('PySide2 janela QMainWindow()')
         # Ícone da janela principal
         icon = QIcon()
         icon.addPixmap(QPixmap('../assets/icons/icon.png'))

@@ -11,7 +11,7 @@
             </rect>
         </property>
         <property name="windowTitle">
-            <string>Lendo arquivo de interface do tipo QWidget e utilizando o connect()</string>
+            <string>XML QWidget e Slot</string>
         </property>
         <property name="windowIcon">
             <iconset>

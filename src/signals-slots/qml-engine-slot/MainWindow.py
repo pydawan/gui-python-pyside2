@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""QQmlApplicationEngine.
+"""QQmlApplicationEngine e Slot.
 
 Acessando um arquivo de interface QML (`QtQuick.Window`) e utilizando o
-`Slot()`` para executar um callback.
+`Slot()` para executar um callback.
 """
 from PySide2.QtCore import QObject, Slot
 from PySide2.QtGui import QGuiApplication, QIcon

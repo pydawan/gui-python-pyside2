@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """QWidget.
 
-Criando uma aplicativo do tipo QWidget com Python e utilizando o
-`connect()` para executar um callback.
+Criando uma aplicativo do tipo QWidget com Python.
 """
 from PySide2.QtGui import QIcon, QPixmap
 from PySide2.QtWidgets import QApplication, QWidget
@@ -12,20 +11,16 @@ class MainWidget(QWidget):
 
     def __init__(self):
         super().__init__()
+        # Resolução do monitor.
         screen_size = app.primaryScreen().geometry()
         width = screen_size.width()
         height = screen_size.height()
-
         # Tamanho inicial da janela.
         self.resize(int(width / 2), int(height / 2))
         # Tamanho mínimo da janela.
-        self.setMinimumSize(int(width / 2), int(height / 2))
-        # Tamanho maximo da janela.
-        self.setMaximumSize(width - 200, height - 200)
-
+        self.setMinimumSize(int(width / 3), int(height / 3))
         # Título da janela.
-        self.setWindowTitle('Título da janela')
-
+        self.setWindowTitle('PySide2 janela QWidget()')
         # Ícone da janela principal
         icon = QIcon()
         icon.addPixmap(QPixmap('../assets/icons/icon.png'))

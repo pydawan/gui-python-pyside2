@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>utilizando o connect() para executar um callback</string>
+   <string>XML QMainWindow e slot</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -51,7 +51,7 @@
      <x>0</x>
      <y>0</y>
      <width>683</width>
-     <height>21</height>
+     <height>29</height>
     </rect>
    </property>
   </widget>
@@ -66,17 +66,17 @@
  <connections>
   <connection>
    <sender>push_button</sender>
-   <signal>clicked()</signal>
-   <receiver>push_button</receiver>
+   <signal>clicked</signal>
+   <receiver>push_buttons</receiver>
    <slot>on_button_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>334</x>
-     <y>343</y>
+     <x>242</x>
+     <y>340</y>
     </hint>
     <hint type="destinationlabel">
-     <x>334</x>
-     <y>357</y>
+     <x>166</x>
+     <y>-14</y>
     </hint>
    </hints>
   </connection>
